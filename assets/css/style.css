@@ -2336,31 +2336,45 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
     background: transparent !important; /* Agar tidak berbentuk kotak pesan dulu */
     margin-bottom: 10px;
 }
-/* RESPONSIVE NAV UNTUK HP */
+/* RESPONSIVE NAV UNTUK HP (VERSI LENGKAP) */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Logo dan menu jadi atas-bawah */
+        flex-direction: column;
         padding: 10px;
         height: auto;
     }
 
     .nav-links {
         display: flex;
-        overflow-x: auto; /* Biar menu bisa di-geser/scroll ke samping */
+        align-items: center; /* Menjaga teks dan ikon sejajar secara vertikal */
+        overflow-x: auto;
         width: 100%;
-        padding: 10px 0;
-        gap: 15px;
+        padding: 10px 5px;
+        gap: 20px;
         justify-content: flex-start;
-        -webkit-overflow-scrolling: touch; /* Biar scroll di HP mulus */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
     }
 
     .nav-links::-webkit-scrollbar {
-        display: none; /* Sembunyikan bar scroll agar rapi */
+        display: none; /* Sembunyikan scrollbar di Chrome/Safari */
     }
 
     .nav-links a {
-        white-space: nowrap; /* Teks menu jangan turun ke bawah */
+        white-space: nowrap;
         font-size: 0.9rem;
+        flex-shrink: 0; /* Menu tidak akan gepeng */
+    }
+
+    /* KHUSUS TOMBOL DARK MODE DI HP */
+    #lottie-theme-toggle {
+        width: 40px !important; 
+        height: 40px !important;
+        min-width: 40px; 
+        flex-shrink: 0; /* WAJIB: Agar tombol tidak menciut jadi 0px saat menu digeser */
+        margin-left: 10px;
+        cursor: pointer;
+        display: inline-block;
     }
 
     .nav-brand {
