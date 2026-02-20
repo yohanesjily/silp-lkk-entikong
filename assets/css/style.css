@@ -2336,9 +2336,8 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
     background: transparent !important; /* Agar tidak berbentuk kotak pesan dulu */
     margin-bottom: 10px;
 }
-/* SATU BLOK RESPONSIVE HP (SUDAH TERMASUK NAV & CHATBOT) */
+/* SATU BLOK RESPONSIVE HP (VERSI FINAL & BERSIH) */
 @media (max-width: 768px) {
-    /* 1. Pengaturan Header & Navigasi */
     nav {
         flex-direction: column;
         padding: 10px;
@@ -2371,7 +2370,6 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
         flex-shrink: 0;
     }
 
-    /* 2. Pengaturan Tombol Dark Mode */
     #lottie-theme-toggle {
         width: 40px !important; 
         height: 40px !important;
@@ -2381,34 +2379,33 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
         display: inline-block;
     }
 
-    /* FIX CHATBOT SUPER JELAS */
-    /* FIX CHATBOT: BESAR TAPI TANPA BULATAN BELAKANG */
+    /* FIX CHATBOT: TANPA BULATAN & UKURAN PROPOSIONAL */
     #chat-toggle-btn {
-        width: 100px !important;   /* Kita beri ruang lebih lebar */
-        height: 100px !important;  
-        bottom: 10px !important;   /* Turunkan sedikit agar tidak terlalu ke tengah */
-        right: 10px !important;
-        background: transparent !important; /* MENGHAPUS WARNA BULATAN */
-        border: none !important;            /* MENGHAPUS GARIS TEPI */
+        width: 90px !important;   /* Ukuran area tombol */
+        height: 90px !important;  
+        bottom: 15px !important;   
+        right: 15px !important;
+        background: transparent !important; /* MENGHILANGKAN WARNA TEAL */
+        background-color: transparent !important; /* DOUBLE CHECK AGAR HILANG */
+        border: none !important;            
+        box-shadow: none !important;        /* HILANGKAN BAYANGAN BULAT */
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         z-index: 99999 !important;
-        box-shadow: none !important;        /* MENGHAPUS BAYANGAN BULATAN */
     }
 
-    /* Ukuran Maskot di Dalamnya */
     .chat-btn-img {
-        width: 200% !important;    /* Maskot akan mengikuti lebar 100px di atas */
+        width: 80px !important;    /* Ukuran maskot di dalam tombol */
         height: auto !important;
         display: block !important;
-        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2)); /* Memberi bayangan halus pada maskot saja */
+        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3)); /* Bayangan pada maskot saja */
     }
-    }
-    /* 4. Jendela Chat Saat Terbuka */
+
     #chat-window {
         width: 90vw !important;   
         bottom: 110px !important;
         right: 5vw !important;
-        height: 500px !important; /* Lebih tinggi sedikit agar lega mengetik */
+        height: 500px !important; 
     }
+} /* PENUTUP MEDIA QUERY HANYA DI SINI */
