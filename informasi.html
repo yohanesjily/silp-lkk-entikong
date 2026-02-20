@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKK Entikong - Informasi Publik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+</head>
+<body>
+<div id="page-transition-overlay"></div>
+    <nav>
+        <div class="nav-brand">
+            <img src="assets/img/logo.png" alt="Logo Kemenkes" class="nav-logo">
+            <span class="brand-text">LKK Entikong</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="pelayanan.html">Pelayanan</a>
+            <a href="informasi.html" class="active">Informasi Publik</a> <a href="buletin.html">Buletin</a>
+            <a href="ppid.html">PPID</a>
+            <a href="aduan.html">Aduan Masyarakat</a>
+            <div id="lottie-theme-toggle" class="lottie-toggle"></div>
+        </div>
+    </nav>
+    
+    <header class="page-header">
+        <div class="container">
+            <h1>Informasi Publik</h1>
+            <p>Akses mudah berbagai dokumen dan data terbuka mengenai LKK Entikong.</p>
+        </div>
+    </header>
+
+    <section class="section-padding" id="dokumen">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kategori Dokumen</h2>
+                <p>Silakan klik judul kategori di bawah untuk melihat daftar dokumen yang tersedia.</p>
+            </div>
+            
+            <div class="accordion-container">
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" data-target="content-1">
+                        Laporan SKI
+                    </button>
+                    <div class="accordion-content" id="content-1">
+                        <ul>
+                            <li><a href="#" target="_blank">Prosedur Tanggap Darurat Bencana Kesehatan di PLBN</a></li>
+                            <li><a href="#" target="_blank">Pengumuman Wabah/Status KLB Terbaru</a></li>
+                            <li><a href="#" target="_blank">Laporan Peringatan Dini Penyakit Potensial Wabah di Perbatasan</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-target="content-2">
+                        Laporan Akuntabilitas Kinerja Instansi Pemerintah dan Dokumen Terkait Lainnya
+                    </button>
+                    <div class="accordion-content" id="content-2">
+                        <ul>
+                            <li><a href="#" target="_blank">Laporan Tahunan Kinerja Instansi (Tahun Terbaru)</a></li>
+                            <li><a href="#" target="_blank">Ringkasan Anggaran dan Realisasi DIPA</a></li>
+                            <li><a href="#" target="_blank">Daftar Pejabat dan Pegawai LKK Entikong</a></li>
+                            <li><a href="#" target="_blank">Data Layanan Publik Tahun [Tahun]</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" data-target="content-3">
+                        Daftar Regulasi dan SOP Terkait Lainnya
+                    </button>
+                    <div class="accordion-content" id="content-3">
+                         <ul>
+                            <li><a href="#" target="_blank">Daftar Regulasi dan Peraturan Terkait Kekarantinaan</a></li>
+                            <li><a href="#" target="_blank">Dokumen Standar Pelayanan (SOP) Lengkap</a></li>
+                            <li><a href="#" target="_blank">Daftar Barang Milik Negara (BMN)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h4>LKK Entikong</h4>
+                <p>Kementerian Kesehatan Republik Indonesia.<br>Melayani Sepenuh Hati.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 LKK Entikong. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // JS Khusus untuk fungsi Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const headers = document.querySelectorAll('.accordion-header');
+            
+            headers.forEach(header => {
+                header.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const content = document.getElementById(targetId);
+                    
+                    // Toggle the clicked content
+                    content.classList.toggle('active');
+                    this.classList.toggle('active');
+                    
+                    // Animasi buka/tutup
+                    if (content.classList.contains('active')) {
+                        // Atur tinggi ke scrollHeight agar konten terlihat penuh
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } else {
+                        content.style.maxHeight = "0"; // Tutup
+                    }
+                });
+            });
+        });
+    </script>
+
+<div id="chatbot-container">
+    <div id="chat-window" class="hidden">
+        <div class="chat-header">
+            <div class="header-info">
+                <span class="online-dot"></span>
+                <h4>Asisten LKK Entikong</h4>
+            </div>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div id="chat-body">
+            <div class="bot-msg">Halo! Saya asisten digital LKK Entikong. Ada yang bisa saya bantu? (Coba tanya: Alamat, Pelayanan, atau Jam Kerja)</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Ketik pertanyaan...">
+            <button id="send-chat">✈️</button>
+        </div>
+    </div>
+    <button id="chat-toggle-btn">
+    <img src="assets/img/iconbot.webp" alt="Chatbot AI" class="chat-btn-img">
+</button>
+</body>
+</html>

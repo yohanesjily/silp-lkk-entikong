@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKK Entikong - Buletin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+</head>
+<body>
+
+    <div id="page-transition-overlay"></div>
+
+    <nav>
+        <div class="nav-brand">
+            <img src="assets/img/logo.png" alt="Logo Kemenkes" class="nav-logo">
+            <span class="brand-text">LKK Entikong</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="pelayanan.html">Pelayanan</a>
+            <a href="informasi.html">Informasi Publik</a>
+            <a href="buletin.html" class="active">Buletin</a> 
+            <a href="ppid.html">PPID</a>
+            <a href="aduan.html">Aduan Masyarakat</a>
+            <div id="lottie-theme-toggle" class="lottie-toggle"></div>
+        </div>
+    </nav>
+    
+    <header class="page-header">
+        <div class="container">
+            <h1>Arsip Buletin LKK Entikong</h1>
+            <p>Dapatkan informasi terbaru dan terdahulu tentang kegiatan dan hasil riset kami.</p>
+        </div>
+    </header>
+
+    <section class="section-padding bg-light" id="arsip">
+        <div class="container">
+            
+            <div class="buletin-filter-bar">
+                <h3>Filter Tahun:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-year="all">Semua</button>
+                    <button class="filter-btn" data-year="2025">2025</button>
+                    <button class="filter-btn" data-year="2024">2024</button>
+                    <button class="filter-btn" data-year="2023">2023</button>
+                </div>
+            </div>
+
+            <div class="buletin-grid">
+                
+                <div class="buletin-card" data-year="2025">
+    <div class="buletin-cover">
+        <img src="assets/img/cover_buletin_november_2025.PNG" alt="Cover Buletin November 2025">
+    </div>
+    <div class="buletin-info">
+        <h3>Edisi November 2025: Buletin Epidemiologi Loka Karantinaan Kesehatan Entikong</h3>
+        <p class="tag">Tahun 2025</p>
+        <p>Laporan komprehensif persiapan dan pelaksanaan pengawasan Nataru di PLBN Entikong.</p>
+        <a href="https://drive.google.com/file/d/1P45aZVXBmPxDGQaUs6qNMkF1I8ZZJ6Ly/view?usp=sharing" class="btn-download">Unduh PDF &darr;</a>
+    </div>
+</div>
+
+                <div class="buletin-card" data-year="2025">
+                    <div class="cover-placeholder">
+                        <p>COVER DES 2025</p>
+                    </div>
+                    <div class="buletin-info">
+                        <h3>Edisi Desember 2025: Menyambut Nataru</h3>
+                        <p class="tag">Tahun 2025</p>
+                        <p>Peningkatan layanan International Certificate of Vaccination (ICV) di masa Haji/Umroh.</p>
+                        <a href="#" class="btn-download">Unduh PDF &darr;</a>
+                    </div>
+                </div>
+
+                <div class="buletin-card" data-year="2024">
+                    <div class="cover-placeholder">
+                        <p>COVER SEP 2024</p>
+                    </div>
+                    <div class="buletin-info">
+                        <h3>Edisi September 2024: Pengawasan Kapal</h3>
+                        <p class="tag">Tahun 2024</p>
+                        <p>Data pengawasan sanitasi kapal dan kapal yang masuk/keluar Pelabuhan Sintete.</p>
+                        <a href="#" class="btn-download">Unduh PDF &darr;</a>
+                    </div>
+                </div>
+                
+                <div class="buletin-card" data-year="2024">
+                    <div class="cover-placeholder">
+                        <p>COVER JUL 2024</p>
+                    </div>
+                    <div class="buletin-info">
+                        <h3>Edisi Juli 2024: Profil LKK</h3>
+                        <p class="tag">Tahun 2024</p>
+                        <p>Perkenalan tim dan wilayah kerja LKK Entikong terbaru.</p>
+                        <a href="#" class="btn-download">Unduh PDF &darr;</a>
+                    </div>
+                </div>
+                
+                <div class="buletin-card" data-year="2023">
+                    <div class="cover-placeholder">
+                        <p>COVER DES 2023</p>
+                    </div>
+                    <div class="buletin-info">
+                        <h3>Edisi Desember 2023: Akhir Tahun</h3>
+                        <p class="tag">Tahun 2023</p>
+                        <p>Ringkasan capaian dan tantangan LKK Entikong selama tahun 2023.</p>
+                        <a href="#" class="btn-download">Unduh PDF &darr;</a>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h4>LKK Entikong</h4>
+                <p>Kementerian Kesehatan Republik Indonesia.<br>Melayani Sepenuh Hati.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 LKK Entikong. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const buletinCards = document.querySelectorAll('.buletin-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // 1. Reset class active pada semua tombol
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // 2. Set class active pada tombol yang diklik
+                    button.classList.add('active');
+                    
+                    const selectedYear = button.getAttribute('data-year');
+
+                    // 3. Loop melalui setiap kartu buletin
+                    buletinCards.forEach(card => {
+                        const cardYear = card.getAttribute('data-year');
+                        
+                        // Logika Filter
+                        if (selectedYear === 'all' || cardYear === selectedYear) {
+                            card.style.display = 'block'; // Tampilkan kartu
+                        } else {
+                            card.style.display = 'none'; // Sembunyikan kartu
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+<div id="chatbot-container">
+    <div id="chat-window" class="hidden">
+        <div class="chat-header">
+            <div class="header-info">
+                <span class="online-dot"></span>
+                <h4>Asisten LKK Entikong</h4>
+            </div>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div id="chat-body">
+            <div class="bot-msg">Halo! Saya asisten digital LKK Entikong. Ada yang bisa saya bantu? (Coba tanya: Alamat, Pelayanan, atau Jam Kerja)</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Ketik pertanyaan...">
+            <button id="send-chat">✈️</button>
+        </div>
+    </div>
+    <button id="chat-toggle-btn">
+    <img src="assets/img/iconbot.webp" alt="Chatbot AI" class="chat-btn-img">
+</button>
+</body>
+</html>

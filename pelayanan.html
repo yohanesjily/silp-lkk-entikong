@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKK Entikong - Pelayanan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+</head>
+<body>
+    
+    <div id="page-transition-overlay"></div>
+
+    <nav>
+        <div class="nav-brand">
+            <img src="assets/img/logo.png" alt="Logo Kemenkes" class="nav-logo">
+            <span class="brand-text">LKK Entikong</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="pelayanan.html" class="active">Pelayanan</a> 
+            <a href="informasi.html">Informasi Publik</a>
+            <a href="buletin.html">Buletin</a>
+            <a href="ppid.html">PPID</a>
+            <a href="aduan.html">Aduan Masyarakat</a>
+            <div id="lottie-theme-toggle" class="lottie-toggle"></div>
+        </div>
+    </nav>
+    
+    <header class="page-header">
+        <div class="container">
+            <h1>Pelayanan</h1>
+            <p>Janji layanan kami kepada masyarakat sebagai wujud komitmen integritas dan profesionalisme.</p>
+        </div>
+    </header>
+
+    <section class="section-padding" id="maklumat">
+        <div class="container">
+            <div class="section-header">
+                <h2>Maklumat Pelayanan</h2>
+                <p>Janji layanan yang kami berikan kepada masyarakat di LKK Entikong.</p>
+            </div>
+
+            <div class="maklumat-container">
+                <img src="assets/img/maklumat_pelayanan.png" alt="Maklumat Pelayanan LKK Entikong" class="maklumat-img">
+            </div>
+        </div>
+    </section>
+    </div>
+    </section>
+    
+
+    <section class="section-padding bg-light" id="indeks-survei">
+        <div class="container">
+            <div class="section-header">
+                <h2>Indeks Kepuasan & Kualitas Layanan</h2>
+                <p>Kami terus memantau dan meningkatkan kualitas layanan berdasarkan masukan dari masyarakat.</p>
+            </div>
+
+            <div class="survey-grid">
+
+                <div class="survey-card">
+                    <img src="assets/img/Kepuasan_Masyarakat.jpeg" alt="Indeks Kepuasan Masyarakat (IKM)" class="survey-img">
+                    <div class="survey-caption">
+                        <h3>Indeks Kepuasan Masyarakat (IKM)</h3>
+                        <p>Nilai: 93,50 (Sangat Baik). Hasil survei Triwulan II 2025.</p>
+                    </div>
+                </div>
+
+                <div class="survey-card">
+                    <img src="assets/img/Kualitas_Pelayanan.jpeg" alt="Indeks Persepsi Kualitas Pelayanan (IPKP)" class="survey-img">
+                    <div class="survey-caption">
+                        <h3>Indeks Kualitas Pelayanan (IPKP)</h3>
+                        <p>Nilai: 3,61 (Sangat Baik). Hasil survei 1 Nov - 2 Nov 2025.</p>
+                    </div>
+                </div>
+
+                <div class="survey-card">
+                    <img src="assets/img/Anti_Korupsi.jpeg" alt="Indeks Persepsi Anti Korupsi (IPAK)" class="survey-img">
+                    <div class="survey-caption">
+                        <h3>Indeks Anti Korupsi (IPAK)</h3>
+                        <p>Nilai: 3,64 (Bersih dari Korupsi). Hasil survei Triwulan II 2025.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h4>LKK Entikong</h4>
+                <p>Kementerian Kesehatan Republik Indonesia.<br>Melayani Sepenuh Hati.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 LKK Entikong. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+<div id="chatbot-container">
+    <div id="chat-window" class="hidden">
+        <div class="chat-header">
+            <div class="header-info">
+                <span class="online-dot"></span>
+                <h4>Asisten LKK Entikong</h4>
+            </div>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div id="chat-body">
+            <div class="bot-msg">Halo! Saya asisten digital LKK Entikong. Ada yang bisa saya bantu? (Coba tanya: Alamat, Pelayanan, atau Jam Kerja)</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Ketik pertanyaan...">
+            <button id="send-chat">✈️</button>
+        </div>
+    </div>
+    <button id="chat-toggle-btn">
+    <img src="assets/img/iconbot.webp" alt="Chatbot AI" class="chat-btn-img">
+</button>
+</body>
+</html>
