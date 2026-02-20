@@ -2381,20 +2381,29 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
         display: inline-block;
     }
 
-    /* 3. MEMPERBESAR TOMBOL CHATBOT (SOLUSI UTAMA) */
+    /* FIX CHATBOT SUPER JELAS */
     #chat-toggle-btn {
-        width: 70px !important;   /* Saya tambahkan sedikit lagi ukurannya */
-        height: 70px !important;
-        bottom: 30px !important;  
+        width: 80px !important;    /* Kita buat sangat besar agar mantap */
+        height: 80px !important;   /* Wajib sama dengan width agar bulat */
+        bottom: 20px !important;  
         right: 20px !important;
-        z-index: 9999 !important; /* Memastikan dia berada paling depan */
+        background-color: #008080 !important; /* Warna khas LKK agar kontras */
+        border-radius: 50% !important;        /* Memaksa jadi bulat */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        z-index: 99999 !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
     }
 
+    /* Ukuran Gambar di Dalam Chatbot */
     .chat-btn-img {
-        width: 45px !important;   /* Ikon di dalam lingkaran juga diperbesar */
-        height: auto;
+        width: 55px !important;    /* Gambar maskotnya diperbesar */
+        height: 55px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
-
     /* 4. Jendela Chat Saat Terbuka */
     #chat-window {
         width: 90vw !important;   
