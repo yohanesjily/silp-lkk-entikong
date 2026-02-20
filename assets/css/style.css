@@ -2343,7 +2343,30 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
         padding: 10px;
         height: auto;
     }
+@media (max-width: 768px) {
+    /* ... kode navigasi yang tadi ... */
 
+    /* MEMPERBESAR TOMBOL CHATBOT DI HP */
+    #chat-toggle-btn {
+        width: 65px !important;   /* Ukuran lingkaran tombol */
+        height: 65px !important;
+        bottom: 25px !important;  /* Jarak dari bawah layar */
+        right: 20px !important;   /* Jarak dari kanan layar */
+    }
+
+    .chat-btn-img {
+        width: 40px !important;   /* Ukuran icon maskot di dalam tombol */
+        height: auto;
+    }
+
+    /* Penyesuaian ukuran jendela chat saat terbuka di HP */
+    #chat-window {
+        width: 85vw !important;   /* Lebar jendela chat 85% dari lebar layar HP */
+        bottom: 100px !important;
+        right: 20px !important;
+        height: 450px !important;
+    }
+}
     .nav-links {
         display: flex;
         align-items: center; /* Menjaga teks dan ikon sejajar secara vertikal */
