@@ -2336,3 +2336,34 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
     background: transparent !important; /* Agar tidak berbentuk kotak pesan dulu */
     margin-bottom: 10px;
 }
+/* RESPONSIVE NAV UNTUK HP */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Logo dan menu jadi atas-bawah */
+        padding: 10px;
+        height: auto;
+    }
+
+    .nav-links {
+        display: flex;
+        overflow-x: auto; /* Biar menu bisa di-geser/scroll ke samping */
+        width: 100%;
+        padding: 10px 0;
+        gap: 15px;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch; /* Biar scroll di HP mulus */
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none; /* Sembunyikan bar scroll agar rapi */
+    }
+
+    .nav-links a {
+        white-space: nowrap; /* Teks menu jangan turun ke bawah */
+        font-size: 0.9rem;
+    }
+
+    .nav-brand {
+        margin-bottom: 5px;
+    }
+}
