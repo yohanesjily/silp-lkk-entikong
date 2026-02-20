@@ -8,7 +8,6 @@
     --color-white: #ffffff;
     --shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
-
 /* --- 2. RESET DASAR --- */
 * {
     margin: 0;
@@ -2329,4 +2328,11 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
     color: #888;
     font-weight: bold;
     padding: 20px;
+}
+.typing-indicator {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #888;
+    background: transparent !important; /* Agar tidak berbentuk kotak pesan dulu */
+    margin-bottom: 10px;
 }
