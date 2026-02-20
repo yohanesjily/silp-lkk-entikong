@@ -2382,27 +2382,28 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
     }
 
     /* FIX CHATBOT SUPER JELAS */
+    /* FIX CHATBOT: BESAR TAPI TANPA BULATAN BELAKANG */
     #chat-toggle-btn {
-        width: 80px !important;    /* Kita buat sangat besar agar mantap */
-        height: 80px !important;   /* Wajib sama dengan width agar bulat */
-        bottom: 20px !important;  
-        right: 20px !important;
-        background-color: #008080 !important; /* Warna khas LKK agar kontras */
-        border-radius: 50% !important;        /* Memaksa jadi bulat */
+        width: 100px !important;   /* Kita beri ruang lebih lebar */
+        height: 100px !important;  
+        bottom: 10px !important;   /* Turunkan sedikit agar tidak terlalu ke tengah */
+        right: 10px !important;
+        background: transparent !important; /* MENGHAPUS WARNA BULATAN */
+        border: none !important;            /* MENGHAPUS GARIS TEPI */
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         z-index: 99999 !important;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+        box-shadow: none !important;        /* MENGHAPUS BAYANGAN BULATAN */
     }
 
-    /* Ukuran Gambar di Dalam Chatbot */
+    /* Ukuran Maskot di Dalamnya */
     .chat-btn-img {
-        width: 55px !important;    /* Gambar maskotnya diperbesar */
-        height: 55px !important;
-        object-fit: contain !important;
+        width: 200% !important;    /* Maskot akan mengikuti lebar 100px di atas */
+        height: auto !important;
         display: block !important;
-        margin: 0 auto !important;
+        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2)); /* Memberi bayangan halus pada maskot saja */
+    }
     }
     /* 4. Jendela Chat Saat Terbuka */
     #chat-window {
@@ -2411,4 +2412,3 @@ body.dark-mode #chat-input { background: #34495e; border-color: #444; color: whi
         right: 5vw !important;
         height: 500px !important; /* Lebih tinggi sedikit agar lega mengetik */
     }
-}
