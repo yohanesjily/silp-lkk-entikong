@@ -12,3 +12,6 @@ yarn-error.log*
 
 # Folder instalasi (jika nanti pakai Node.js)
 node_modules/
+# SSH Private Key (Rahasia)
+id_rsa_entikong
+yohanes.entikong_id_rsa
